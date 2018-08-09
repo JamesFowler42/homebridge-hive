@@ -61,7 +61,7 @@ HiveThermostat.prototype = {
 		function(error, response, body) {
 			try {
 				if (this.debug) {
-					this.log("Login JSON==" + body + "==");
+					this.log("Login JSON==" + body + "== error=" + error + ", response=" + response);
 				}
 				var json = JSON.parse(body);
 				if ( json.error ) {
